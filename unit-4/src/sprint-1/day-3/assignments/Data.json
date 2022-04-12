@@ -1,0 +1,44 @@
+{
+    "RestotantData":[
+        {"card_payment":true,
+            "total_votes":5,
+            "reviews1":44,
+            "cost":199,
+            "catogeries":"vegitaria",
+            "imageUrl":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/z8nhoydbtyemyflwhypx",
+            "name":"Pandit Awasthi Bhojnalaya Pure Veg"
+        },
+        {"card_payment":true,
+            "total_votes":8,
+            "reviews1":40,
+            "cost":159,
+            "catogeries":"vegitaria",
+            "imageUrl":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/guobi6qypggmmrucusjg",
+            "name":"Chill N Grill"
+        },
+        {"card_payment":true,
+            "total_votes":5,
+            "reviews1":44,
+            "cost":188,
+            "catogeries":"Chainese",
+            "imageUrl":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hhkpdm2gtque26uh1zud",
+            "name":"THE CHINESE MAN"
+        },
+        {"card_payment":true,
+            "total_votes":5,
+            "reviews1":44,
+            "cost":399,
+            "catogeries":"Non-veg",
+            "imageUrl":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/grp7ofuaqxf9wmimxeyw",
+            "name":"Hotel Sujal Saoji"
+        },
+        {"card_payment":true,
+            "total_votes":88,
+            "reviews1":44,
+            "cost":299,
+            "catogeries":"Non-veg",
+            "imageUrl":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dkuk7bqc54hay72wcrhw",
+            "name":"Shahi Haandi Kebab & Biryani"
+        }
+    ]
+}
