@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import React from 'react';
 import './App.css';
-import { Todos } from './sprint-2/day-1/we/Todos';
+import { Todos } from './sprint-2/day-1/assignments/Todos';
 
 
 // let todos = [
