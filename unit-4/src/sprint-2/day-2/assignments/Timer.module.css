@@ -1,0 +1,17 @@
+.timerDiv{
+    font-size: 50px;
+    font-family: digital-clock-font;
+    font-weight: bold;
+
+    border: solid 1px black;
+    width: 300px;
+    padding: 5px 30px;
+    margin: 20px auto;
+    border-radius:10px;
+}
+button{
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}

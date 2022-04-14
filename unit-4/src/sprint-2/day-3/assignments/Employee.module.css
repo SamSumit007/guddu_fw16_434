@@ -1,0 +1,25 @@
+.myForm{
+    display: flex;
+    flex-direction: row;
+    /* border: solid red 1px; */
+    margin: 10px auto;
+    font-size: 18px;
+    justify-content: space-between;
+}
+input,select{
+    width: 59%;
+}
+.mainDiv{
+    border: solid red 1px;
+    width: 25%;
+    font-size: 18px;
+}
+.Submitbutton{
+    font-size: 18px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px;
+}
