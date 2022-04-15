@@ -1,0 +1,39 @@
+{
+  "EmployeeDetails": [
+    {
+      "name": "Nrupul",
+      "age": 40,
+      "address": "benguluru",
+      "Dept": "curriculam",
+      "salary": 25000000000,
+      "marital_status": true,
+      "id": 1
+    },
+    {
+      "name": "Guddu",
+      "age": "25",
+      "address": "mumbai",
+      "Dept": "curriculam",
+      "salary": "25555",
+      "id": 2
+    },
+    {
+      "name": "Chand",
+      "age": "25",
+      "address": "mumbai",
+      "Dept": "support",
+      "salary": "255554641313",
+      "marital_status": true,
+      "id": 3
+    },
+    {
+      "name": "Akkaladevi Gouthamm",
+      "age": "25",
+      "address": "andhrapradesh",
+      "Dept": "addmission",
+      "salary": "3000000000",
+      "marital_status": true,
+      "id": 4
+    }
+  ]
+}

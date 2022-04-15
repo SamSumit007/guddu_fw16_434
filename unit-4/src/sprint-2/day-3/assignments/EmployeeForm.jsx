@@ -7,38 +7,34 @@ export default function EmployeeForm() {
   const handleChange = (e) => {
     const inputName = e.target.name;
     if (e.target.type === "checkbox") {
-        console.log(e.target.checked)
-        setformData({
-          ...formData,
-          [inputName]: e.target.checked,
-        });
-      }
-    else if (e.target.type === "file") {
+      console.log(e.target.checked);
       setformData({
         ...formData,
-        [inputName]: e.target.files,
+        [inputName]: e.target.checked,
+      });
+    } else {
+      setformData({
+        ...formData,
+        [inputName]: e.target.value,
       });
     }
-    setformData({
-      ...formData,
-      [inputName]: e.target.value,
-    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    postTodos(formData)
+    console.log(formData);
+    postTodos(formData);
   };
 
   const postTodos = async (formData) => {
     try {
-      let res = await fetch(`http://localhost:3000/todos`, {
+      let res = await fetch(`http://localhost:3000/EmployeeDetails`, {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify(formData),
       });
       let data = await res.json();
-      console.log(data)
+      console.log(data);
     } catch (e) {
       console.log(e);
     }
@@ -86,11 +82,17 @@ export default function EmployeeForm() {
         </div>
         <div className={styles.myForm}>
           <label>Salary</label>
-          <input type="text" name="salary" placeholder="Saleary" onChange={handleChange} />
+          <input
+            type="text"
+            name="salary"
+            placeholder="Saleary"
+            onChange={handleChange}
+          />
         </div>
         <div className={styles.myForm}>
           <label>Marital Status</label>
-          <input style={{height:"20px", width:"50px"}}
+          <input
+            style={{ height: "20px", width: "50px" }}
             type="checkbox"
             name="marital_status"
             onChange={handleChange}
