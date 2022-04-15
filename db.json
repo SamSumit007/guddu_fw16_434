@@ -1,29 +1,9 @@
 {
-  "todos": [
+  "employee_Details": [
     {
       "value": "Milk 2ltr",
       "completed": true,
       "id": 1
-    },
-    {
-      "value": "Rice 25kg",
-      "completed": false,
-      "id": 2
-    },
-    {
-      "value": "sugar 2kg",
-      "completed": false,
-      "id": 3
-    },
-    {
-      "value": "tomato Catchup",
-      "completed": false,
-      "id": 4
-    },
-    {
-      "value": "apple 1kg",
-      "completed": false,
-      "id": 5
     }
   ]
 }

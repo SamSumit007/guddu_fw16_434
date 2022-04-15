@@ -1,0 +1,74 @@
+#header{
+    text-align: center;
+}
+#mainDiv{
+    /* border: solid black 2px; */
+    margin: auto 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#frame{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    height: 150px;
+    justify-content: space-between;
+}
+
+#rate{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    width: 30px;
+    border-radius: 10px;
+}
+#frame div{
+    margin: auto 20px;
+}
+
+#frame >div img{
+    height: 100%;
+    width: 150px;
+}
+#frame >div h3{
+    margin: 0px;
+}
+#displayDiv{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+}
+#formDiv{
+width: 28%;
+height: fit-content;
+border: solid black 2px;
+}
+.lebel{
+    margin-bottom: 0px;
+}
+input{
+    padding: 5px;
+}
+#submit{
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    width: 100%;
+
+}
+#sortdiv{
+    display: flex;
+    margin: 10px;
+}
+#sortdiv>h3{
+    margin: 0px;
+    margin-right: 10px;
+}
+#sortdiv button{
+    height: fit-content;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}

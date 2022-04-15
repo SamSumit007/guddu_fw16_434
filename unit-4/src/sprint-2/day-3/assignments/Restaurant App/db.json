@@ -1,0 +1,221 @@
+{
+  "RestaurantDetails": [
+    {
+      "Payment_method": "card",
+      "total_votes": 5,
+      "reviews1": 44,
+      "rating": 4.2,
+      "cost": 199,
+      "catogeries": "vegitaria",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/z8nhoydbtyemyflwhypx",
+      "name": "Pandit Awasthi Bhojnalaya Pure Veg",
+      "id": 1
+    },
+    {
+      "Payment_method": "cash",
+      "total_votes": 8,
+      "reviews1": 40,
+      "rating": 3,
+      "cost": 159,
+      "catogeries": "vegitaria",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/guobi6qypggmmrucusjg",
+      "name": "Chill N Grill",
+      "id": 2
+    },
+    {
+      "Payment_method": "card",
+      "total_votes": 5,
+      "reviews1": 44,
+      "rating": 2,
+      "cost": 188,
+      "catogeries": "Chainese",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hhkpdm2gtque26uh1zud",
+      "name": "THE CHINESE MAN",
+      "id": 3
+    },
+    {
+      "Payment_method": "cash",
+      "total_votes": 5,
+      "reviews1": 44,
+      "rating": 4.8,
+      "cost": 399,
+      "catogeries": "Non-veg",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/grp7ofuaqxf9wmimxeyw",
+      "name": "Hotel Sujal Saoji",
+      "id": 4
+    },
+    {
+      "Payment_method": "all",
+      "rating": 1,
+      "total_votes": 88,
+      "reviews1": 44,
+      "cost": 299,
+      "catogeries": "Non-veg",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dkuk7bqc54hay72wcrhw",
+      "name": "Shahi Haandi Kebab & Biryani",
+      "id": 5
+    },
+    {
+      "Payment_method": "cash",
+      "name": "The Smoked Biryani",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/odukgerhemxmv44a8hlw",
+      "cost": 200,
+      "catogeries": "Non_veg",
+      "id": 6
+    },
+    {
+      "Payment_method": "card",
+      "name": "Khichadi's",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/nlb26m0qmq9qzrtdfj6p",
+      "cost": "159",
+      "rating": "4.0",
+      "total_votes": "88",
+      "reviews1": "1255",
+      "catogeries": "Vegeterian",
+      "id": 7
+    },
+    {
+      "name": "Spinach Khichdi",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ocfxzmxpnexkqqinqz19",
+      "cost": "159",
+      "rating": "4.0",
+      "total_votes": "56",
+      "reviews1": "51",
+      "catogeries": "Vegeterian",
+      "Payment_method": "cash",
+      "id": 8
+    },
+    {
+      "name": "Goli Vada Pav - Chaprunagar Sq.",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/oc1zekzvgizigztesoii",
+      "cost": "100",
+      "rating": "5.0",
+      "total_votes": "464",
+      "reviews1": "656",
+      "catogeries": "Vegeterian",
+      "Payment_method": "cash",
+      "id": 9
+    },
+    {
+      "name": "The Spice King Kitchen",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/cdmuwlf4wskzvy1gejnf",
+      "cost": "300",
+      "rating": "3.0",
+      "total_votes": "6456",
+      "reviews1": "54263",
+      "catogeries": "chainese",
+      "Payment_method": "all",
+      "id": 10
+    },
+    {
+      "name": "Krypto Kitchen",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vwukunkobfpur5oxipsp",
+      "cost": "250",
+      "rating": "3",
+      "total_votes": "654",
+      "reviews1": "54",
+      "catogeries": "Non_veg",
+      "Payment_method": "cash",
+      "id": 11
+    },
+    {
+      "name": "Taste of Biryani",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lzycicdeto36xtabd3ph",
+      "cost": "200",
+      "rating": "4.0",
+      "total_votes": "645",
+      "reviews1": "897",
+      "catogeries": "Non_veg",
+      "Payment_method": "cash",
+      "id": 12
+    },
+    {
+      "name": "Paneer Biryani",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/khqi4pvywdxdkz9ethf1",
+      "cost": "180",
+      "rating": "5",
+      "total_votes": "32",
+      "reviews1": "987",
+      "catogeries": "Non_veg",
+      "Payment_method": "card",
+      "id": 13
+    },
+    {
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/byvaayezjofv8wsbn0ie",
+      "name": "Chicken Dum Biryani",
+      "cost": "250",
+      "rating": "3",
+      "total_votes": "54",
+      "reviews1": "9756",
+      "catogeries": "Non_veg",
+      "Payment_method": "cash",
+      "id": 14
+    },
+    {
+      "name": "Maa Durga Bhojnalay And Restaurant",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/sdbvkqdpkyk6azkhzauo",
+      "cost": "199",
+      "rating": "4",
+      "total_votes": "546",
+      "reviews1": "465",
+      "catogeries": "Vegeterian",
+      "Payment_method": "all",
+      "id": 15
+    },
+    {
+      "name": "Gangour",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/nhwwwad3l30cfmba5p8z",
+      "cost": "300",
+      "rating": "5",
+      "total_votes": "856",
+      "reviews1": "465",
+      "catogeries": "Vegeterian",
+      "Payment_method": "cash",
+      "id": 16
+    },
+    {
+      "name": "Two Brothers Shawarma",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dxzzpxyr2tgj9t814ebr",
+      "cost": "250",
+      "rating": "5",
+      "total_votes": "124",
+      "reviews1": "98",
+      "catogeries": "Non_veg",
+      "Payment_method": "all",
+      "id": 17
+    },
+    {
+      "name": "Chicken Dum Biryani [ 1KG ]",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/hsdo02krnupk1gingwcs",
+      "cost": "580",
+      "rating": "4",
+      "total_votes": "465",
+      "reviews1": "546",
+      "catogeries": "Non_veg",
+      "Payment_method": "cash",
+      "id": 18
+    },
+    {
+      "name": "Foody Moody Thali",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/sm2d7bzlpx6mb7qauodz",
+      "cost": "200",
+      "rating": "3",
+      "total_votes": "526",
+      "reviews1": "789",
+      "catogeries": "Vegeterian",
+      "Payment_method": "all",
+      "id": 19
+    },
+    {
+      "name": "Paneer Sabji + 3 Roti + Rice + Achar + Onion",
+      "imageUrl": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ngje161vsjqfwbjcdgmv",
+      "cost": "90",
+      "rating": "4.6",
+      "total_votes": "866",
+      "reviews1": "8465",
+      "catogeries": "Vegeterian",
+      "Payment_method": "all",
+      "id": 20
+    }
+  ]
+}
