@@ -22,7 +22,8 @@ export default function EmployeeDetails() {
         <EmployeeForm />
         <div id={styles.rightDiv}>
           <table>
-            <tr>
+              <thead>
+              <tr>
               <th>Name</th>
               <th>Age</th>
               <th>Department</th>
@@ -30,6 +31,9 @@ export default function EmployeeDetails() {
               <th>salary</th>
               <th>Address</th>
             </tr>
+
+              </thead>
+            
             <tbody>
               {employeeData.map((elem) => {
                 return (
