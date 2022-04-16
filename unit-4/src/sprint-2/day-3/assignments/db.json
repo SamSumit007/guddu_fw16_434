@@ -34,6 +34,27 @@
       "salary": "3000000000",
       "marital_status": true,
       "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "name": "aljaid",
+      "age": "25",
+      "address": "mumbai",
+      "Dept": "support",
+      "salary": "5456463",
+      "marital_status": false,
+      "id": 6
+    },
+    {
+      "name": "ali",
+      "age": "21",
+      "address": "ali",
+      "Dept": "addmission",
+      "salary": "123123123",
+      "marital_status": true,
+      "id": 7
     }
   ]
 }

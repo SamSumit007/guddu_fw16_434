@@ -21,12 +21,12 @@ export default function EmployeeForm() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     console.log(formData);
-    postTodos(formData);
+    postEmployee(formData);
   };
 
-  const postTodos = async (formData) => {
+  const postEmployee = async (formData) => {
     try {
       let res = await fetch(`http://localhost:3000/EmployeeDetails`, {
         method: "POST",

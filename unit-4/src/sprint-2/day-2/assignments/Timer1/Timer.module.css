@@ -1,0 +1,27 @@
+.maindiv{
+    /* border:  solid red 1px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 300px;
+    margin: 150px auto;
+}
+.maindiv div{
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aquamarine;
+    margin: 16px;
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+}

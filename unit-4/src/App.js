@@ -1,14 +1,14 @@
 // import logo from './logo.svg';
 import React from "react";
 import "./App.css";
-import EmployeeDetails from "./sprint-2/day-3/assignments/EmployeeDetails";
+import Timer from "./sprint-2/day-2/assignments/Timer1/Timer";
 
 
 
 function App() {
   return (
     <>
-    <EmployeeDetails/>
+    <Timer/>
     </>
   );
 }
