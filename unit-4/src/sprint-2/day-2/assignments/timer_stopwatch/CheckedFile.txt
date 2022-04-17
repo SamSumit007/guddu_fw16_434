@@ -1,0 +1,16 @@
+
+**********Minimum Viable Product************
+
+***You must have implemented a stopwatch that lets you start, stop and reset.****
+1. The stopwatch must display the number of seconds and milliseconds. --> Done
+2. The timer must allow a user to manually enter the time using an inputbox, in seconds. --> Done
+3. The user should be able to start, stop and reset the timer. --> Done
+4. The user should be able to toggle between the timer and the stopwatch using tabs just like the google timer. --> Done
+5. The timer should not increment twice if its already clicked 
+
+*******Stretch Goals******
+1. The stopwatch must also display the minutes and hours. --> Done
+
+2. The timer must also display the minutes and hours.  --> Done
+
+3. The timer must allow the user to input the time in seconds minutes and hours just like the Google timer.

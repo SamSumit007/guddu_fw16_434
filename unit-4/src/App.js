@@ -1,14 +1,15 @@
 // import logo from './logo.svg';
 import React from "react";
 import "./App.css";
-import Timer from "./sprint-2/day-2/assignments/Timer1/Timer";
+import { Timmer } from "./sprint-2/day-2/assignments/timer_stopwatch/Timmer";
 
 
 
 function App() {
   return (
     <>
-    <Timer/>
+    <Timmer/>
+    {/* <Timer/> */}
     </>
   );
 }
