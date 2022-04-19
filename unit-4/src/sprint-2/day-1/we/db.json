@@ -1,0 +1,8 @@
+{
+    "todos":[
+        { "id":1, "value":"React", "completed":false},
+        { "id":2, "value":"Mern", "completed":false},
+        { "id":3, "value":"babel", "completed":true},
+        { "id":4, "value":"Vdom", "completed":false}
+    ]
+}
