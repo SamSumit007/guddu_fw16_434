@@ -1,0 +1,40 @@
+what is react
+A: a react is a UI library for building ui element.
+
+waht is VDOm
+what is Hooks
+        useState
+        useEffect: is a way to execute a call back function under a given condition's
+            when: Component is mounted
+                    Component is Unmounted
+                    Component is updated
+
+        useRef: Use to store value and not to looseing it even the Component is update or re_render
+
+what is props:
+passing value from one component to another componant
+
+what is uplifting:
+As we cant passing the value from children to children so we have to pass it to parent and take it from there 
+
+why do we need this uplifting:
+
+what is stateful-component or stateless-component.
+A component which is something to do with state;
+
+
+
+
+<></>
+
+<Amazon>
+    <Navbar>
+        <AccountInfo>
+            <Cart>
+                
+            </Cart>
+        </AccountInfo>
+    </Navbar>
+
+
+</Amazon>

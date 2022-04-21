@@ -1,0 +1,23 @@
+// import logo from './logo.svg';
+import React, { useContext, useEffect } from "react";
+import "./App.css";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import {AuthContext} from "./sprint-3/day-2/you/contexts/AuthProvider"
+import Login from "./sprint-3/day-2/you/page/Login";
+import Home from "./sprint-3/day-2/you/page/Home";
+
+function App() {
+  const {isLoggedIn } = useContext(AuthContext);
+
+  return (
+    <>
+      <div className="App">
+        {isLoggedIn?<Home/>: <Login/>}
+      
+      
+      </div>
+    </>
+  );
+}
+
+export default App;

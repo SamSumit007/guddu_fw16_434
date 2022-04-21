@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  border: solid red 1px;
+}
+
+.border{
+  border: solid black 1px;
+  margin: 10px;
+  padding: 10px;
 }
 .todo{
   margin: auto;

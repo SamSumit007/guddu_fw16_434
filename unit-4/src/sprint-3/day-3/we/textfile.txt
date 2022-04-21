@@ -1,0 +1,13 @@
+what is url
+link
+what does a url consist:
+schema: https, https, ftp, smpt
+domain: www.linkdin.com
+ip:
+port 
+pathname
+
+what are parameter in url?
+querry parameter: ?key=value&key2=value;
+
+path parameter:  

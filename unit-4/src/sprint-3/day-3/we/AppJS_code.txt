@@ -1,0 +1,44 @@
+// import logo from './logo.svg';
+import React, { useContext, useEffect } from "react";
+import "./App.css";
+import Home from "./sprint-3/day-3/we/Home";
+import Navbar from "./sprint-3/day-3/we/Navbar";
+import About from "./sprint-3/day-3/we/About";
+import Login from "./sprint-3/day-3/we/Login";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import SignIn from "./sprint-3/day-3/we/SignIn";
+import Signup from "./sprint-3/day-3/we/Signup";
+import Google from "./sprint-3/day-3/we/Google";
+import Counter from "./sprint-3/day-3/we/Counter";
+import Products from "./sprint-3/day-3/we/Products";
+import Product from "./sprint-3/day-3/we/Product";
+
+function App() {
+  const navigate = useNavigate();
+
+  // useEffect(() => {
+  //   navigate("/home");
+  // }, []);
+  return (
+    <>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="home" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="login/*" element={<Login />}>
+            <Route path="signin" element={<SignIn />} />
+            <Route path="signup" element={<Signup />} />
+            <Route path="sign-in-google" element={<Google />} />
+          </Route>
+          <Route path="counter/:initialCount" element={<Counter />} />
+          <Route path="products/*" element={<Products />}>
+            <Route path=":id" element={<Product />} />
+          </Route>
+        </Routes>
+      </div>
+    </>
+  );
+}
+
+export default App;
