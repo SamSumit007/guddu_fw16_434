@@ -4,15 +4,16 @@ import "./App.css";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import CreditCard from "./sprint-3/day-1/assignments/CreditCard/CreditCard";
 import CreditCardForm from "./sprint-3/day-1/assignments/CreditCard/CreditCardForm";
+import Navbar from "./sprint-3/day-2/assignments/ThemeContext/Navbar";
+import Dashboard from "./sprint-3/day-2/assignments/ThemeContext/Dashboard";
 
 
 function App() {
-  const [data,setData] = useState({});
   return (
     <>
     <div className="App">
-      <CreditCard data={data} setData={setData}/>
-      <CreditCardForm data={data} setData={setData}/>
+      <Navbar/>
+      <Dashboard/>
     </div>
 
       

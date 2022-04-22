@@ -5,15 +5,15 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-
-// AuthProvider
+import { ThemeProvider } from "./sprint-3/day-2/assignments/ThemeContext/ThemeProvider";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
-  
-      <App />
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
