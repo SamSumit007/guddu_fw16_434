@@ -1,0 +1,44 @@
+/* input{
+    border-color:brown;
+    border: none;
+    border-bottom: solid red 2px;
+    margin-top: 0px;
+
+}
+p{
+    font-size: 10px;
+    margin: 0px;
+} */
+
+
+#cardDiv{
+    /* border:solid black 1px;  */
+    width:45%;
+     display:flex;
+      justify-content:center;
+       align-items:center;
+       color: white;
+}
+#Card{
+    background-color:#f6425b;
+     height:220px; width:350px;
+      border-radius:15px;
+       /* border:solid black 1px; */
+       color: white;
+}
+#Cardtype{
+    display:flex;
+     justify-content:end;
+      margin:10px ;
+      color: white;
+}
+#paybtn{
+    padding: 8px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f6425b;
+    border: none;
+    color: white;
+    border-radius: 10px;
+
+}
