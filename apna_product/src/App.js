@@ -10,8 +10,6 @@ import Login from "./Components/pages/Login";
 import Sign_In from "./Components/pages/Sign_In";
 import Sign_up from "./Components/pages/Sign_up";
 import Cart from "./Components/pages/Cart";
-import { useContext, useEffect } from "react";
-import { AuthContext } from "./Components/Contexts/AuthContext";
 import { RequiredAuth } from "./Components/Contexts/RequiredAuth";
 
 function App() {
@@ -23,9 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contactus" element={<ContactUS />} />
         <Route path="/faq" element={<FAQ />} />
-        <Route
-          path="/cart"
-          element={
+        <Route path="/cart" element={
             <RequiredAuth>
               <Cart />
             </RequiredAuth>
