@@ -5,6 +5,7 @@ const AuthContext = createContext();
 
 const AuthContextProvider = ({ children }) => {
   const [token, setToken] = useState("");
+  const [divdata, setdivdata] = useState();
 
   const handleLogin =async (email, password) => {
     //  api request to reqres.in for the token
@@ -22,7 +23,7 @@ const AuthContextProvider = ({ children }) => {
     setToken("")
   };
 
-  const value = { handleLogin, token, handleLogout };
+  const value = { handleLogin, token, handleLogout,divdata, setdivdata };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

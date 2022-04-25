@@ -1,9 +1,10 @@
 // import axios from "axios";
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
+import { AuthContext } from "../context/AuthContext";
 
 // style for Flex
 const Flex = styled.div``;
@@ -11,15 +12,21 @@ const Flex = styled.div``;
 // add style for button
 export const Button = styled.button``;
 export const SingleBook = (props) => {
-  const params = useParams();
-  const data = props;
-  console.log(params);
+  // const {id} = useParams();
+  const {divdata} = useContext(AuthContext);
+  const [data, setdata] = useState({});
+  // const data = props;
+  // console.log(params);
   useEffect(() => {
     // make a GET request to http://localhost:8080/books/${id}`
     // use useParams to get the id
     const getid = async()=>{
-      // let res = await fetch(`http://localhost:8080/books/${id}`)
-    }
+      let res = await fetch(`http://localhost:8080/books/${divdata}`);
+      let Data = await res.json();
+      console.log(data)
+      setdata(Data)
+    };
+    getid();
   }, []);
 
   return (
