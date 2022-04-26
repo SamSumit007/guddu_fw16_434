@@ -13,7 +13,6 @@ function Product(data) {
     }
   };
   
-
   return (
     <div id={styles.mainFrame}>
       <img src={imgURL} />
