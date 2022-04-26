@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1 id="counter">0</h1>
-    <button id="increment">Increment</button>
-    <button id="decrement">Decrement</button>
-</body>
+    <style>
+      #mainDiv {
+        margin: auto;
+        width: fit-content;
+        overflow: hidden;
+        border: solid black;
+        padding: 10px;
+      }
+      button {
+        height: 50px;
+        width: 100px;
+        background-color: black;
+        color: white;
+        margin: 2px;
+        border: none;
+        border-radius: 10px;
+      }
+      input {
+        width: 96%;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainDiv">
+      <h1 style="text-align: center" id="counter">0</h1>
+      <input type="number" placeholder="Enter a number" id="inpValue" />
+      <br />
+      <div>
+        <button id="increment">Increment</button>
+        <button id="decrement">Decrement</button>
+      </div>
+      <div>
+        <button id="add">ADD</button>
+        <button id="subtract">SUBTRACT</button>
+      </div>
+
+      <div>
+        <button id="multiply">MULTIPLY</button>
+        <button id="divide">DIVIDE</button>
+      </div>
+    </div>
+  </body>
 </html>
 
 <script type="module" src="index.js"></script>
