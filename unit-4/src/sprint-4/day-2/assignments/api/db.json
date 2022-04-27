@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "todo": "buy banana",
+      "status": true,
+      "id": "dc791fc2-d307-43bc-a389-0cb11df95176"
+    },
+    {
+      "todo": "buy kalingar",
+      "status": true,
+      "id": "146c5516-a25c-4487-9bd8-05a318a4587d"
+    },
+    {
+      "todo": "Buy gajar ka halua",
+      "status": true,
+      "id": "53874f86-c421-4baa-99e1-0bdfe8a487a1"
+    }
+  ]
+}

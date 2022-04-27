@@ -8,15 +8,17 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./sprint-3/day-2/assignments/ThemeContext/ThemeProvider";
 import { AuthProvider } from "./sprint-3/day-4/we/Context/AuthContext";
 import { Provider } from "react-redux";
-import {store} from "./sprint-4/day-2/you/redux/store"
+import { store } from "./sprint-4/day-2/assignments/Redux/store";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

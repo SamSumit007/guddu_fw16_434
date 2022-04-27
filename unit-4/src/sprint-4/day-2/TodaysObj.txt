@@ -1,0 +1,21 @@
+How to get started with redux in react
+install redux and rext-redux
+wrap application inside provider and pass store to the provider
+create initial state 
+create reducer 
+create a store with reducer and initialstate
+
+
+// counter 
+-how to read data from store // using useSelecter
+-how to dispatch an action // using useDispach
+
+
+-Remaining 
+    -action 
+        -action type 
+            -hard coaded all strings
+    -actions 
+        -created function with logic, api calls with async function
+           -whenever we called api, at that time we passed dispatched as arguments
+                -to handle api we split our action, state in to landing, error and data;
