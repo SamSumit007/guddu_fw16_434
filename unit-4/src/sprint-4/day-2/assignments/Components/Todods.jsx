@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { getTodods } from "./Redux/action";
+import { getTodods } from "../Redux/action";
 import Todo from "./Todo";
 import TodoInput from "./TodoInput";
-import { Link } from "react-router-dom";
 
 function Todods() {
-  const { isLoading, isError, data } = useSelector((state) => state.todos);
+  const { isLoading, isError, data } = useSelector(
+    (state) => state.todos.todos
+  );
   const dispatch = useDispatch();
 
   useEffect(() => {

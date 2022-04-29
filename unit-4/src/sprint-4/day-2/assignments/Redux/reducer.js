@@ -7,7 +7,15 @@ import {
   GET_TODOS_SUCCESS,
 } from "./actionType";
 
-export const reducer = (state, action) => {
+const initialState={
+  todos:{
+      isloading:false,
+      isError:false,
+      data:[],
+  }
+}
+
+export const reducer = (state=initialState, action) => {
   switch (action.type) {
     case GET_TODOS_REQUEST: {
       return {
@@ -55,7 +63,7 @@ export const reducer = (state, action) => {
         todos: {
           isLoading: false,
           isError: false,
-          data: state.todos.data.filter((elem) => elem.id === action.payload),
+          data: state.todos.data
         },
       };
     }

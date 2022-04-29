@@ -5,10 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "./sprint-3/day-2/assignments/ThemeContext/ThemeProvider";
-import { AuthProvider } from "./sprint-3/day-4/we/Context/AuthContext";
 import { Provider } from "react-redux";
-import { store } from "./sprint-4/day-2/assignments/Redux/store";
+import { store } from "./sprint-4/day-2/assignments/Redux/store"
 
 const container = document.getElementById("root");
 const root = createRoot(container);

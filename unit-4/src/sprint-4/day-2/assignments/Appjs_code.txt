@@ -19,7 +19,6 @@ function App() {
           <Route path="/" element={<Todods/>}/>
           <Route path={`/todo/${id}`} element={<Todo/>}/>
         </Routes>
-      
       </div>
     </>
   );

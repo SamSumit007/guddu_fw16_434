@@ -1,0 +1,23 @@
+
+writing the code :---
+                        -clean code;
+                                giving it a proper structure;
+
+->folderwise:   -Action wise
+                -reducer wise
+                -feature wise
+                store.js
+
+
+--> feaure wise
+                    -redux wise
+                     - counter
+                        -todos
+                        
+
+create redux
+todo 
+counter
+
+actionjs and reducer js
+setup store ->{ }

@@ -1,11 +1,14 @@
 import { combineReducers, legacy_createStore } from "redux";
-import { authReducer } from "../Auth/AythReducer";
-import { reducer } from "./Reducer";
+import { CounterReducer } from "./counter/reducer";
+import { todoReducer } from "./Todo/TodoReducer";
 
-const rootReducer = combineReducers({ auth: authReducer, app: reducer });
+const rootreducer = combineReducers({
+  count: CounterReducer, //global state come from
+  todo: todoReducer,
+});
 
 export const store = legacy_createStore(
-  rootReducer,
+  rootreducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

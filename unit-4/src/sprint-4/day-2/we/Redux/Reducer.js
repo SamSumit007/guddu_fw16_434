@@ -1,22 +1,18 @@
+import { localdata, savedata } from "../utils/localStorage";
 import { ADD_TODO } from "./ActionType";
 
 const initstate = {
-  todos: [
-    {
-      id: 1,
-      title: "Buy Milk",
-      status: false,
-    },
-    { id: 2, title: "Buy Brad", status: false },
-  ],
+  todos: localdata("todo")||[]
 };
 
 export const reducer = (state = initstate, { type, payload }) => {
   switch (type) {
     case ADD_TODO: {
+      const updateTodo = [...state.todos, payload];
+      savedata("todos", updateTodo)
       return {
         ...state,
-        todos: [...state.todos, payload],
+        todos: updateTodo
       };
     }
     default:
