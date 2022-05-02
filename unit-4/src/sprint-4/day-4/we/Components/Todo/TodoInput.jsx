@@ -29,7 +29,6 @@ export const TodoInput = () => {
     });
     setTitle("");
   };
-
   return (
     <div>
       <input
