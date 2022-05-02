@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Buy Milk",
+      "status": false
+    },
+    {
+      "id": 2,
+      "title": "Buy apple",
+      "status": false
+    },
+    {
+      "id": 3,
+      "title": "Buy Banana",
+      "status": false
+    },
+    {
+      "id": "6f994ca7-7da7-4b1d-9233-fba75f73c021",
+      "title": "Buy Chocolate",
+      "status": false
+    },
+    {
+      "id": "557fb467-03c0-4830-8644-17ca99b32fae",
+      "title": "hfdknv",
+      "status": false
+    },
+    {
+      "id": "56106e54-ef73-445f-8db1-f076880f9092",
+      "title": "Add more banana",
+      "status": false
+    }
+  ]
+}

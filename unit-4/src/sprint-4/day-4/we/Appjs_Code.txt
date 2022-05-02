@@ -1,29 +1,14 @@
-
 import "./App.css";
-import React, { useContext, useEffect, useState } from "react";
-import Todods from "./sprint-4/day-2/assignments/Todods";
-import { Route, Routes, useParams } from "react-router-dom";
-import Todo from "./sprint-4/day-2/assignments/Todo";
-import { Login } from "./sprint-4/day-2/assignments/Login";
-import { Home } from "./sprint-4/day-2/assignments/Home";
-import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment, reset } from "./sprint-4/day-4/we/redux/action";
-
-
-
+import React from "react";
+import { Counter } from "./sprint-4/day-4/we/Components/Counter/Counter";
+import { Todo } from "./sprint-4/day-4/we/Components/Todo/Todo";
 
 function App() {
-  const counter  = useSelector((state)=>state.count);
-  const dispatch = useDispatch();
-  
-
   return (
     <>
       <div className="App">
-       <h1>counter:{counter}</h1>
-       <button onClick={()=>dispatch(increment(1))}>INC</button>
-       <button onClick={()=>dispatch(decrement(1))}>DEC</button>
-       <button onClick={()=>dispatch(reset())}>RESET</button>
+        <Counter />
+        <Todo/>
       </div>
     </>
   );

@@ -15,18 +15,16 @@ function Todo({ todo, id, status }) {
         border: "solid black 1px",
         backgroundColor: "aquamarine",
         margin: "10px auto",
+        padding:"10px"
       }}
 
-      onClick={()=>navigate(`/todo/${id}`)}
+      onClick={()=>navigate(`/${id}`)}
     >
-      <div style={{ padding: "10px" }}>
-        <h3 style={{ margin: "0px", display: "inline-block" }}>{todo}</h3>
-        {status ? <p style={{ display: "inline" }}>Done</p> : <p></p>}
+      <div>
+        <h3 style={{ margin: "0px"}}>{todo}</h3>
       </div>
-    </div>
-
-    //   </Link>
-    
+      <div>{status ? <p >Done</p> : <p></p>}</div>
+    </div>    
   );
 }
 

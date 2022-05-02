@@ -1,37 +1,57 @@
-import { applyMiddleware, legacy_createStore,compose } from "redux"
-import {CounterReducer} from "./reducer"
+import {
+  legacy_createStore as createStore,
+  combineReducers,
+  applyMiddleware,
+  compose,
+} from "redux";
 
+import { CounterReducer } from "./Counter/reducer";
+import { todosReducer } from "./Todo/TodoReducer";
+// import thunk from "redux-thunk";
 
-const midleware1 = (store) => (next) => (action)=>{
-    // action.payload=10;
-    console.log("entering midleware1")
-    console.log(action);
-    next(action)
-    console.log("exit midleware1")
-}
+const rootReducer = combineReducers({
+  todos: todosReducer,
+  counter: CounterReducer,
+});
 
-const midleware2 = (store) => (next) => (action)=>{
-    console.log("entering midleware2")
-    // action.payload=10;
-    console.log(action);
-    next(action)
-    console.log("exit midleware1")
-}
+// then you will use a middleware with some logic that can accomodate that;
 
+const ownThunk = (store) => (next) => (action) => {
+  // this middleware will tell us the type of action that has been dispatched
+  console.log("type of action is ", typeof action);
+
+  // what if the action that gets dispatched is not an object and it is a function;
+
+  if (typeof action === "function") {
+    // in that scenario ; invoke that function;
+    return action(store.dispatch);
+
+    /*
+      (dispatch) => {
+          dispatch(getTodosLoading());
+          fetch(`http://localhost:3001/todos`)
+            .then((res) => res.json())
+            .then((res) => dispatch(getTodosSuccess(res)))
+              .catch(() => dispatch(getTodosError()));
+        }
+
+    */
+  }
+
+  // if action is object; move to next middleware if exists else move to reducer;
+  next(action);
+};
 
 const composeEnhancers =
-  typeof window === 'object' &&
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-      // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
-    }) : compose;
+  typeof window === "object" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+        // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
+      })
+    : compose;
 
- 
-    const enhancer = composeEnhancers(
-        applyMiddleware(midleware1,midleware2),
-        // other store enhancers if any
-      );
+const enhancer = composeEnhancers(
+  applyMiddleware(ownThunk)
+  // other store enhancers if any
+);
 
-// const middlewaremain = applyMiddleware(midleware1,midleware2)
-
-export const store =legacy_createStore(CounterReducer,enhancer)
+export const store = createStore(rootReducer, enhancer);

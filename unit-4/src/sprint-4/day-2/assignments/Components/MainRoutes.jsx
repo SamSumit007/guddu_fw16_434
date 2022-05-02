@@ -10,14 +10,14 @@ function MainRoutes() {
   return (
     <>
       <Routes>
-        <Route path="/" element={
+        <Route path="/*" element={
             <Home>
               <Todods />
             </Home>
           }
         />
         <Route path="login" element={<Login />} />
-        <Route path="/todo/:id" element={<TodoDisplayPage />} />
+          <Route path="/:id" element={<TodoDisplayPage />} />
       </Routes>
     </>
   );
