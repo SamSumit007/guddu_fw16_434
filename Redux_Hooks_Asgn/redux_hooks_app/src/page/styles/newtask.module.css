@@ -1,0 +1,16 @@
+.maindiv{
+    border: solid red 1px;
+    margin: auto;
+    padding: 15px;
+    
+}
+.inpDiv{
+    border: solid ;
+    width: 250px;
+    height: 500px;
+    margin-left: 10px;
+}
+
+.formdiv{
+    display: flex;
+}

@@ -13,19 +13,3 @@ function savedata(key, data) {
 }
 
 export { localdata, savedata };
-
-
-// const initState={
-//     todos:localdata("todo") || [] 
-// }
-
-
-// in reducer 
-// case Add_todo:{
-//     const updatetodo = [...state.todo, payload];
-//     savedata("todos", updatedata)
-//     return{
-//         ...state,
-//         todos:updatetodo
-//     }
-// }

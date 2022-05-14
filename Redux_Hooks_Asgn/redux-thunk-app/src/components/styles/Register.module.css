@@ -1,0 +1,27 @@
+.outerdiv {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+}
+.inp {
+  width: 500px;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f8f7f5;
+  border: none;
+  border-bottom: solid 3px gray;
+  outline: none;
+}
+.button {
+  width: 520px;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+}
+#heading {
+  text-align: center;
+}

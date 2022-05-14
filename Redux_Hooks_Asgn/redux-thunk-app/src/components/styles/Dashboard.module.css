@@ -1,0 +1,47 @@
+.outer {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 3%;
+}
+.profile {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 30%;
+  padding: 10px;
+  height: 500px;
+}
+.git {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 65%;
+  padding: 10px;
+}
+
+.search {
+  width: 85%;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.button {
+  font-size: 18px;
+  padding: 10px;
+  width: 15%;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+
+.heading{
+  text-align: center;
+  margin-top: 50px;
+}
+#buttonDiv{
+  width: fit-content;
+  margin: 10px auto;
+}
+#buttonDiv button{
+  padding: 5px 15px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  margin: 5px;
+}
