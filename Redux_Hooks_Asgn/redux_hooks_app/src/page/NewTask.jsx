@@ -1,32 +1,49 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AddSubTask } from "../Components/AddSubTask";
 import styles from "./styles/newtask.module.css";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
+import { addTask } from "../Redux/Action";
+import { useDispatch } from "react-redux";
 
 export const NewTask = () => {
-  const [AddSubtask, setAddSubtask] = useState([]);
   const [TaskData, setTaskData] = useState({});
   const [tag, settag] = useState([]);
+  const [addSubTask, setaddSubTask] = useState("");
+  const [AddSubTask, setAddSubtask] = useState([]);
+  const dispatch = useDispatch();
+
+  const handleAdd = () => {
+    if (addSubTask) {
+      const objSubtask = {
+        subtask: addSubTask,
+        status: false,
+        id: uuidv4(),
+      };
+      setAddSubtask([...AddSubTask, objSubtask]);
+    }
+  };
 
   const handlechange = (e) => {
     const keyname = e.target.name;
-    if(e.target.type=="checkbox"){
+    if (e.target.type == "checkbox") {
+      if (e.target.name == "personal") settag([...tag, "personal"]);
+      else if (keyname == "official") settag([...tag, "official"]);
+      else settag([...tag, "other"]);
+    } else {
       setTaskData({
         ...TaskData,
-        [keyname]: e.target.checked,
+        [keyname]: e.target.value,
       });
     }
-    setTaskData({
-      ...TaskData,
-      [keyname]: e.target.value,
-    });
   };
 
+  useEffect(()=>{
+    setTaskData({ ...TaskData, tag: tag, subtask: AddSubTask, id: uuidv4() });
+  },[AddSubTask,tag])
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    setTaskData({...TaskData, subtask: AddSubTask,id:uuidv4() });
-    console.log(TaskData);
+    // console.log(TaskData)
+    addTask(dispatch,TaskData);
   };
 
   return (
@@ -54,6 +71,7 @@ export const NewTask = () => {
               <input
                 type="radio"
                 name="taskStatus"
+                value={"todo"}
                 onChange={handlechange}
               />{" "}
               Todo
@@ -61,6 +79,7 @@ export const NewTask = () => {
               <input
                 type="radio"
                 name="taskStatus"
+                value={"In progress"}
                 onChange={handlechange}
               />{" "}
               In Progress
@@ -68,8 +87,9 @@ export const NewTask = () => {
               <input
                 type="radio"
                 name="taskStatus"
+                value={"Done"}
                 onChange={handlechange}
-              />{" "}
+              />
               Done
             </div>
             <div>
@@ -99,7 +119,7 @@ export const NewTask = () => {
           </div>
           <div className={styles.inpDiv}>
             <label>Add Sub Task</label>
-            <AddSubTask AddSubtask={AddSubtask} setAddSubtask={setAddSubtask} />
+            {/* <AddSubTask AddSubtask={AddSubtask} setAddSubtask={setAddSubtask} /> */}
           </div>
 
           <div className={styles.inpDiv}>
@@ -115,6 +135,15 @@ export const NewTask = () => {
           </div>
         </div>
       </form>
+      <div>
+        <input
+          type="text"
+          value={addSubTask}
+          onChange={(e) => setaddSubTask(e.target.value)}
+          placeholder="Add Sub Task"
+        />
+        <button onClick={handleAdd}>ADD</button>
+      </div>
     </div>
   );
 };

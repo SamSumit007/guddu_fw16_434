@@ -22,4 +22,4 @@ const enhancer = composeEnhancers(
   // other store enhancers if any
 );
 
-export const store = createStore(rootReducer,enhancer);
+export const store = createStore(taskReducer,enhancer);

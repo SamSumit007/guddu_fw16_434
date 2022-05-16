@@ -19,6 +19,16 @@ padding:10px 50px;
 background-color:black;
 color:white;
 `;
+export const Inputtag = styled.input`
+font-size:15px;
+padding:10px;
+width:300px;
+border:none;
+border-bottom:solid 3px;
+outline:none;
+
+`;
+
 
 
 

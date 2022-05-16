@@ -1,0 +1,85 @@
+{
+  "task": [
+    {
+      "date": "2022-05-15",
+      "discription": "masai course",
+      "id": 1,
+      "subtask": [
+        {
+          "title": "todo1",
+          "status": false,
+          "id": 11
+        },
+        {
+          "title": "todo2",
+          "status": false,
+          "id": 12
+        }
+      ],
+      "tag": [
+        "personal",
+        "official",
+        "others"
+      ],
+      "taskStatus": "In progress",
+      "title": "Todo"
+    },
+    {
+      "title": "Buy milk",
+      "discription": "ncvxjkbn",
+      "taskStatus": "In progress",
+      "date": "2022-05-20",
+      "tag": [
+        "personal",
+        "official"
+      ],
+      "subtask": [
+        {
+          "subtask": "add for1ltr",
+          "status": false,
+          "id": "866a3cc6-33fa-4585-83a9-f1f7279dc5c9"
+        },
+        {
+          "subtask": "add for2ltr",
+          "status": false,
+          "id": "b566115e-9be8-4f46-b4e2-74810e47edb4"
+        },
+        {
+          "subtask": "add for3ltr",
+          "status": false,
+          "id": "f8aecc5e-9942-4d2c-b1f5-dcf11784bfb8"
+        }
+      ],
+      "id": "71e88ca7-a957-4116-acbf-0b360e5af7f6"
+    },
+    {
+      "tag": [
+        "personal",
+        "official",
+        "other"
+      ],
+      "subtask": [
+        {
+          "subtask": "hello1",
+          "status": false,
+          "id": "2ce9c8b3-ba5b-41df-8c15-3702088cd651"
+        },
+        {
+          "subtask": "hello12",
+          "status": false,
+          "id": "7acbd938-a892-4fca-bff1-a2f9c4c0add3"
+        },
+        {
+          "subtask": "hello123",
+          "status": false,
+          "id": "89a9807d-bd4c-46b2-9797-a7830593bfb6"
+        }
+      ],
+      "id": "b564c500-463c-41d6-b7d2-5ca7d0cf2812",
+      "title": "Buy House",
+      "discription": "banglow to be withdraw",
+      "taskStatus": "todo",
+      "date": "2022-05-25"
+    }
+  ]
+}

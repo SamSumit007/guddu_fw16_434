@@ -1,0 +1,45 @@
+Compilation Vs Transpilation
+
+Compilation =>
+
+From High level language to Low level language
+Low level usually is machine code (eg: binary) or bytecode
+generated code is generally not human readable, it's for machine only
+eg: C, C++ -> .exe
+Transpilation
+
+From high level language to high level language
+Generated code is usually human readable
+Generated code may need to go through one more compilation step
+eg:
+from const Heading =
+Hello
+to -> const Heading = React.createElement("h1", null, "Hello")
+eg:
+from es6 const x = 1 to es3 var x = 1
+Statically Typed vs Dynamically Typed
+
+Dynamically Typed
+
+Types are not known at compile time
+Generally slower
+JS, Python, Ruby
+eg: const x = 1;
+eg: const y = "hello";
+Generally less safer
+Statically Typed
+
+Types are known at compile time
+Generally faster than Dynamically typed
+Generally Safer
+C, C++, Go, Rust, Java, Typescript
+eg: int x = 1
+eg: string y = "Hello";
+Typescript
+
+Statically Typed
+Just Javascript
+Traspiles to JS
+eg: const x: string = "hello";
+eg: const y: number = 1;
+const z: string = 10; // error
