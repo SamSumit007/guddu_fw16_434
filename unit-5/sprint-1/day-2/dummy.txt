@@ -1,0 +1,29 @@
+import {useState} from "react"
+
+type Todo={
+    id:number;
+    title:string;
+    satatus:boolean;
+}
+
+export const Todos=()=>{
+    const [text,settext]= useState<string>("")
+    const [todos,settodos]=useState([]);
+
+    return(
+        <div>
+        <input type=text value={text}
+        onChange={e=>settext(e.target.value)} />
+        <button onClick={ settodos([
+            ...todos,{id:Math.random(),status:false, title:text},
+        ])}>Add</button>
+
+        <div>
+        {todos.map((t)=> (
+            <div key={t.id}>{t.title} -{t.status ? "Done" : "Pending"}
+        ))}
+
+        </div>
+        </div>
+    )
+}

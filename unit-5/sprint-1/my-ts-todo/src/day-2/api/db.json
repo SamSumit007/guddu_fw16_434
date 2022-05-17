@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "nrupul",
+      "status": false
+    },
+    {
+      "id": "2612efde-057b-4e6f-92cd-17d6422dec25",
+      "title": "Learn todos",
+      "status": false
+    },
+    {
+      "id": "cdca052d-bc4f-4aab-8b51-0fa861d03e0d",
+      "title": "get data",
+      "status": false
+    },
+    {
+      "id": "9cf0fc47-592e-4928-8e9d-881c806db42a",
+      "title": "get data2",
+      "status": false
+    }
+  ]
+}

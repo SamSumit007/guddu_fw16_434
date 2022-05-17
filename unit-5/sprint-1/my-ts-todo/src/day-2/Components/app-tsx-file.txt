@@ -1,0 +1,22 @@
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { Todos } from './day-2/Components/Todos';
+import { Counter } from './day-2/Components/Counter';
+
+function App() {
+  return (
+    <div className="App">
+     <Todos/>
+     {/* <Counter init={0}/>
+     <Counter init={5}/> */}
+     {/* <Counter init={10}>
+       <button>Add child</button>
+     </Counter> */}
+
+
+    </div>
+  );
+}
+
+export default App;

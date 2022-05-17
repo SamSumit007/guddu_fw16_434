@@ -1,0 +1,13 @@
+{
+  "laptopsData": [
+    {
+      "id": "1",
+      "model": "Dell261",
+      "make-year": 2021,
+      "os": "windows",
+      "screen-height": 13,
+      "screen-width": 15.6,
+      "price": 46999
+    }
+  ]
+}
