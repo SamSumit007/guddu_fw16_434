@@ -1,0 +1,22 @@
+{
+    "laptopsData": [
+      {
+        "id": "1",
+        "model": "Dell261",
+        "make_year": 2021,
+        "os": "windows",
+        "screen_height": 13,
+        "screen_width": 15.6,
+        "price": 46999
+      },
+      {
+        "model": "dell vostro",
+        "id": "998c9aac-4fd1-4e53-8dab-18f738850367",
+        "make_year": "2022",
+        "os": "windows10-11generation",
+        "screen_height": "13",
+        "screen_width": "15",
+        "price": "50000"
+      }
+    ]
+  }

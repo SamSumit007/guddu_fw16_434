@@ -7,7 +7,7 @@ import { DellAdmin } from './day-2/Assignment/components/DellAdmin';
 
 function App() {
   return (
-    <div className="App"><DellAdmin/>
+    <div className="App"><h1>Day-3</h1>
        </div>
   );
 }
