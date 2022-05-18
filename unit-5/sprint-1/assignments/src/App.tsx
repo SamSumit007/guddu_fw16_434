@@ -1,12 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { DellAdmin } from './day-2-assignment/Admin';
+import {useTimeout} from './day-3-asgn/TimeoutHooks/useTimeout'
+import { Stopwatch } from './day-3-asgn/timer-stopwatch/Stopwatchs';
+import { Timer } from './day-3-asgn/timer-stopwatch/Timer';
 
 function App() {
+  const toShow = useTimeout(2)
+
   return (
     <div className="App">
-    <DellAdmin/>
+
+      {!toShow ?  <h1>Loading UI.....</h1> : <><Timer/><Stopwatch/></> }
+    
     </div>
   );
 }
