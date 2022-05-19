@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from "react";
 
-export const useMergeState = (initState:object) => {
-    const [ state, setstate] = useState(initState);
+export const useMergeState = (initState: any) => {
+  const [state, setstate] = useState(initState);
 
-  return {state,setstate}
-}
+  return [state, setstate];
+};

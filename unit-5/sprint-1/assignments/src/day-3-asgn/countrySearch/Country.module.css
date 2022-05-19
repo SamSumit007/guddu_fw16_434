@@ -1,0 +1,15 @@
+.country{
+    font-size: 18px;
+    width: fit-content;
+    margin:10px auto;
+    color: gray;
+}
+
+.country:hover{
+    font-size: 20px;
+    font-weight: bold;
+    animation-duration: 10ms;
+    background-color:#f8f1f5;
+    color: black;
+    padding: 5px 50px;
+}
