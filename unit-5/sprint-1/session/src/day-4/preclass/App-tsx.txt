@@ -1,10 +1,9 @@
-import "./App.css";
-import { Todo } from "./day-4/live/Todo";
-
+import './App.css';
+import { Opt } from './day-4/live/Opt';
 function App() {
   return (
     <div className="App">
-      <Todo />
+  <Opt/>
     </div>
   );
 }

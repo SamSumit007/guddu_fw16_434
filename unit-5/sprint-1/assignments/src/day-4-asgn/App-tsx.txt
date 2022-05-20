@@ -1,10 +1,10 @@
 import "./App.css";
-import { Todo } from "./day-4/live/Todo";
+import { MemoisationApp } from "./day-4-asgn/MemoisationApp";
 
 function App() {
   return (
     <div className="App">
-      <Todo />
+      <MemoisationApp/>
     </div>
   );
 }

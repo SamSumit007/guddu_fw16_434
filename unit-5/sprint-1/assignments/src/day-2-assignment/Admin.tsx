@@ -16,6 +16,7 @@ type laptopInfo={
 export const DellAdmin = () => {
     const [formData,setformData] = useState({})
     const [data,setdata] = useState<laptopInfo[]>([]);
+    const [data1,setdata1] = useState<laptopInfo[]>([]);
 
     const handleInput=(e: { target: any; })=>{
         const file = e.target ; 
@@ -42,8 +43,20 @@ getData()
         .then(r=>{
             console.log(r.data)
             setdata(r.data);
+            setdata1(r.data)
         })
         .catch(e=>console.log(e))
+    }
+
+    const shortByprice=()=>{
+        let updatedata = data1.sort((a,b) => +(a.price) - +(b.price))
+        setdata(updatedata)
+        console.log(data)
+    }
+    const shortByYear = ()=> {
+        let updatedata = data1.sort((a,b) => +(a.make_year) - +(b.make_year))
+        setdata(updatedata)
+        console.log(data)
     }
   return (<>
   <div>
@@ -66,8 +79,8 @@ getData()
     </div>
     <h2>List of the Product</h2>
     <div>
-        <button className={styles.sortbtn}>sort by price</button>
-        <button className={styles.sortbtn}>sort by year</button>
+        <button className={styles.sortbtn} onClick={shortByprice}>sort by price</button>
+        <button className={styles.sortbtn} onClick={shortByYear}>sort by year</button>
     </div>
     <div style={{width:"fit-content",margin:"auto"}}>
         <table className={styles.table}>
@@ -99,3 +112,7 @@ getData()
     
   )
 }
+function price(price: any) {
+    throw new Error('Function not implemented.')
+}
+

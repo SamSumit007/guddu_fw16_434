@@ -2,15 +2,14 @@ import React, { memo } from 'react'
 import {Todo} from './Todo'
 
 type TodoTogle = {
-    handleTogle:void;
+    handleTogle:(s:number) => void;
 }
 
-export const Todoitem = (props:Todo) => {
+export const Todoitem = (props:Todo & TodoTogle) => {
     console.log("Rendering todoitem",props.title);
 
     const handleStatus = ()=>{
         props.handleTogle(props.id)
-
     }
 
   return (

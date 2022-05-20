@@ -12,7 +12,7 @@ export const Todo = () => {
     const [list, setList] = useState<Todo[]>([])
 
     const handleTogle = (id:number)=>{
-setList(list.map((elem)=>(elem.id===id ? {...elem, status:!elem.status}:1)))
+setList(list.map((elem)=>(elem.id===id ? {...elem, status:!elem.status}:elem)))
     }
 
     const callback = useCallback(handleTogle,[list]);

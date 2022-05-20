@@ -1,22 +1,40 @@
 {
-    "laptopsData": [
-      {
-        "id": "1",
-        "model": "Dell261",
-        "make_year": 2021,
-        "os": "windows",
-        "screen_height": 13,
-        "screen_width": 15.6,
-        "price": 46999
-      },
-      {
-        "model": "dell vostro",
-        "id": "998c9aac-4fd1-4e53-8dab-18f738850367",
-        "make_year": "2022",
-        "os": "windows10-11generation",
-        "screen_height": "13",
-        "screen_width": "15",
-        "price": "50000"
-      }
-    ]
-  }
+  "laptopsData": [
+    {
+      "id": "1",
+      "model": "Dell261",
+      "make_year": 2021,
+      "os": "windows",
+      "screen_height": 13,
+      "screen_width": 15.6,
+      "price": 46999
+    },
+    {
+      "model": "dell vostro",
+      "id": "998c9aac-4fd1-4e53-8dab-18f738850367",
+      "make_year": "2022",
+      "os": "windows10-11generation",
+      "screen_height": "13",
+      "screen_width": "15",
+      "price": "50000"
+    },
+    {
+      "model": "inspiron",
+      "id": "1e22cc0e-5457-4626-9b3b-915c35e364a7",
+      "make_year": "2011",
+      "os": "window 11, 10geretion ",
+      "screen_height": "15",
+      "screen_width": "15",
+      "price": "30000"
+    },
+    {
+      "model": "inspiron 3500",
+      "id": "7d9d8d3c-5d93-46ab-91a4-d0addfec8b6e",
+      "make_year": "2010",
+      "os": "window 11, 10geretion ",
+      "screen_height": "14",
+      "screen_width": "16",
+      "price": "28000"
+    }
+  ]
+}
