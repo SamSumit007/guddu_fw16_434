@@ -1,23 +1,30 @@
-import { useState } from "react";
+import React from "react";
+export const useList = (array: any) => {
+  const [uselist1, uselist2] = React.useState(array);
 
-export const useList = (arr: number[]) => {
-    const [list,setlist] = useState(arr);
+  const push = (x: number) => {
+    uselist1.push(x);
+    uselist2([...uselist1]);
+  };
+  const pop = () => {
+    uselist1.pop();
+    uselist2([...uselist1]);
+  };
 
-    const push=(props:number)=>{
-        list.push(props)
-    }
-    const pop= ()=>{
-        list.pop();
-    }
+  const clear = () => {
+    uselist2([]);
+  };
 
-    const clear = ()=>{
+  const reset = () => {
+    uselist2(array);
+  };
 
-    }
-    const reset = ()=>{
+  const map = (x: Function) => {
+    console.log(x);
+    let mydata = uselist1.map(x);
+    uselist2(mydata);
+  };
 
-    }
-    const map =()=>{
-
-    }
-    return [list, {push, pop, clear, reset, map}]
+  let value1 = { push, pop, clear, reset, map };
+  return [uselist1, value1];
 };
