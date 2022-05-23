@@ -35,6 +35,15 @@
       "screen_height": "14",
       "screen_width": "16",
       "price": "28000"
+    },
+    {
+      "model": "inspiron",
+      "id": "1e085f6c-f7ea-4343-8f8b-381adce898ca",
+      "make_year": "2030",
+      "os": "os",
+      "screen_height": "14",
+      "screen_width": "13",
+      "price": "60000"
     }
   ]
 }

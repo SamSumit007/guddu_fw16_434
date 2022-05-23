@@ -49,13 +49,13 @@ getData()
     }
 
     const shortByprice=()=>{
-        let updatedata = data1.sort((a,b) => +(a.price) - +(b.price))
-        setdata(updatedata)
+        let updatedata = data.sort((a,b) => +(a.price) - +(b.price))
+        setdata([...updatedata])
         console.log(data)
     }
     const shortByYear = ()=> {
-        let updatedata = data1.sort((a,b) => +(a.make_year) - +(b.make_year))
-        setdata(updatedata)
+        let updatedata = data.sort((a,b) => +(a.make_year) - +(b.make_year))
+        setdata([...updatedata])
         console.log(data)
     }
   return (<>
