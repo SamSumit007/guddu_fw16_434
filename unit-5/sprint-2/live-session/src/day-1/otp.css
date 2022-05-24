@@ -1,0 +1,14 @@
+.otpinp{
+    width: 18px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    border-bottom: solid 3px black;
+};
+
+.accordianContainer{
+    width: 500px;
+    
+}
